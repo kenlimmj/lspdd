@@ -1,0 +1,32 @@
+# @Author: Lim Mingjie, Kenneth <Astrianna>
+# @Date:   2016-06-16T19:40:11-04:00
+# @Email:  me@kenlimmj.com
+# @Last modified time: 2016-06-26T18:47:25-04:00
+# @License: MIT
+
+{
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "globalReturn": true,
+    },
+    "sourceType": "module",
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": ["babel"],
+  "env": {
+    "es6": true,
+    "node": true,
+  },
+  "rules": {
+    "array-bracket-spacing": 0,
+    "max-len": [2, 140],
+    "no-console": [1, { "allow": ["warn", "error", "info", "time", "timeEnd", "trace"] }],
+    "no-multi-spaces": [1, "exceptions": { "VariableDeclarator": true, "ImportDeclaration": true }],
+    "no-underscore-dangle": 0,
+    "no-unused-vars": [2, { "varsIgnorePattern": "_" }],
+    "quotes": [2, "single", { "allowTemplateLiterals": true }],
+  }
+}

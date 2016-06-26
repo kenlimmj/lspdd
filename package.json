@@ -21,7 +21,7 @@
   "dependencies": {
     "async": "^2.0.0-rc.6",
     "jsonfile": "^2.3.1",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
   },
   "devDependencies": {
     "eslint": "^2.13.1",
