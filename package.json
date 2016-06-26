@@ -1,0 +1,35 @@
+{
+  "name": "lspdd",
+  "version": "1.0.0",
+  "description": "A scraper for the Lamp Spectral Power Distribution Database (LSPDD)",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "eslint -f table src tests; exit 0",
+    "precommit-msg": "echo 'Pre-commit Checks...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "prebuild"
+  ],
+  "repository": "github:kenlimmj/lspdd",
+  "author": "Lim Mingje, Kenneth <me@kenlimmj.com> (https://kenlimmj.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenlimmj/lspdd/issues"
+  },
+  "homepage": "https://github.com/kenlimmj/lspdd#readme",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "jsonfile": "^2.3.1",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-import": "^1.9.2",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
+    "pre-commit": "^1.1.3"
+  }
+}
