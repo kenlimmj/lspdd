@@ -1,1 +1,413 @@
-{"name":"-","id":2660,"category":"Standard Illuminant","brand":"C","lamptype":"Standard Illuminant","voltage":null,"spectralimg":null,"cct":6772,"cri":null,"ipi":"1.04","msi":"1.02","sli":"1.02","percentblue":"43.1","measuredate":null,"acquiredby":null,"created_at":"2015-11-18T05:18:34.420Z","updated_at":"2015-12-21T17:32:14.846Z","spectraldata":"wavelength,relativeIntensity\n 300,0\r\n 305,0\r\n 310,0\r\n 315,0\r\n 320,0.01\r\n 325,0.2\r\n 330,0.4\r\n 335,1.55\r\n 340,2.7\r\n 345,4.85\r\n 350,7\r\n 355,9.95\r\n 360,12.9\r\n 365,17.2\r\n 370,21.4\r\n 375,27.5\r\n 380,33\r\n 385,39.92\r\n 390,47.4\r\n 395,55.17\r\n 400,63.3\r\n 405,71.81\r\n 410,80.6\r\n 415,89.53\r\n 420,98.1\r\n 425,105.8\r\n 430,112.4\r\n 435,117.75\r\n 440,121.5\r\n 445,123.45\r\n 450,124\r\n 455,123.6\r\n 460,123.1\r\n 465,123.3\r\n 470,123.8\r\n 475,124.09\r\n 480,123.9\r\n 485,122.92\r\n 490,120.7\r\n 495,116.9\r\n 500,112.1\r\n 505,106.98\r\n 510,102.3\r\n 515,98.81\r\n 520,96.9\r\n 525,96.78\r\n 530,98\r\n 535,99.94\r\n 540,102.1\r\n 545,103.95\r\n 550,105.2\r\n 555,105.67\r\n 560,105.3\r\n 565,104.11\r\n 570,102.3\r\n 575,100.15\r\n 580,97.8\r\n 585,95.43\r\n 590,93.2\r\n 595,91.22\r\n 600,89.7\r\n 605,88.83\r\n 610,88.4\r\n 615,88.19\r\n 620,88.1\r\n 625,88.06\r\n 630,88\r\n 635,87.86\r\n 640,87.8\r\n 645,87.99\r\n 650,88.2\r\n 655,88.2\r\n 660,87.9\r\n 665,87.22\r\n 670,86.3\r\n 675,85.3\r\n 680,84\r\n 685,82.21\r\n 690,80.2\r\n 695,78.24\r\n 700,76.3\r\n 705,74.36\r\n 710,72.4\r\n 715,70.4\r\n 720,68.3\r\n 725,66.3\r\n 730,64.4\r\n 735,62.8\r\n 740,61.5\r\n 745,60.2\r\n 750,59.2\r\n 755,58.5\r\n 760,58.1\r\n 765,58\r\n 770,58.2\r\n 775,58.5\r\n 780,59.1\r\n\r\n","url":"/app/fr/lamps/2660","thumb":"/img_1s/thumb/missing.png"}
+{
+  "id": 2660,
+  "title": "[Standard Illuminant] C (B: 43.1%)",
+  "indices": {
+    "ipi": 1.04,
+    "msi": 1.02,
+    "sli": 1.02,
+    "percentBlue": 0.431
+  },
+  "metaData": {
+    "category": "Standard Illuminant",
+    "brand": "C",
+    "lampType": "Standard Illuminant"
+  },
+  "spectralData": [
+    {
+      "wavelength": 300,
+      "relativeIntensity": 0
+    },
+    {
+      "wavelength": 305,
+      "relativeIntensity": 0
+    },
+    {
+      "wavelength": 310,
+      "relativeIntensity": 0
+    },
+    {
+      "wavelength": 315,
+      "relativeIntensity": 0
+    },
+    {
+      "wavelength": 320,
+      "relativeIntensity": 0.01
+    },
+    {
+      "wavelength": 325,
+      "relativeIntensity": 0.2
+    },
+    {
+      "wavelength": 330,
+      "relativeIntensity": 0.4
+    },
+    {
+      "wavelength": 335,
+      "relativeIntensity": 1.55
+    },
+    {
+      "wavelength": 340,
+      "relativeIntensity": 2.7
+    },
+    {
+      "wavelength": 345,
+      "relativeIntensity": 4.85
+    },
+    {
+      "wavelength": 350,
+      "relativeIntensity": 7
+    },
+    {
+      "wavelength": 355,
+      "relativeIntensity": 9.95
+    },
+    {
+      "wavelength": 360,
+      "relativeIntensity": 12.9
+    },
+    {
+      "wavelength": 365,
+      "relativeIntensity": 17.2
+    },
+    {
+      "wavelength": 370,
+      "relativeIntensity": 21.4
+    },
+    {
+      "wavelength": 375,
+      "relativeIntensity": 27.5
+    },
+    {
+      "wavelength": 380,
+      "relativeIntensity": 33
+    },
+    {
+      "wavelength": 385,
+      "relativeIntensity": 39.92
+    },
+    {
+      "wavelength": 390,
+      "relativeIntensity": 47.4
+    },
+    {
+      "wavelength": 395,
+      "relativeIntensity": 55.17
+    },
+    {
+      "wavelength": 400,
+      "relativeIntensity": 63.3
+    },
+    {
+      "wavelength": 405,
+      "relativeIntensity": 71.81
+    },
+    {
+      "wavelength": 410,
+      "relativeIntensity": 80.6
+    },
+    {
+      "wavelength": 415,
+      "relativeIntensity": 89.53
+    },
+    {
+      "wavelength": 420,
+      "relativeIntensity": 98.1
+    },
+    {
+      "wavelength": 425,
+      "relativeIntensity": 105.8
+    },
+    {
+      "wavelength": 430,
+      "relativeIntensity": 112.4
+    },
+    {
+      "wavelength": 435,
+      "relativeIntensity": 117.75
+    },
+    {
+      "wavelength": 440,
+      "relativeIntensity": 121.5
+    },
+    {
+      "wavelength": 445,
+      "relativeIntensity": 123.45
+    },
+    {
+      "wavelength": 450,
+      "relativeIntensity": 124
+    },
+    {
+      "wavelength": 455,
+      "relativeIntensity": 123.6
+    },
+    {
+      "wavelength": 460,
+      "relativeIntensity": 123.1
+    },
+    {
+      "wavelength": 465,
+      "relativeIntensity": 123.3
+    },
+    {
+      "wavelength": 470,
+      "relativeIntensity": 123.8
+    },
+    {
+      "wavelength": 475,
+      "relativeIntensity": 124.09
+    },
+    {
+      "wavelength": 480,
+      "relativeIntensity": 123.9
+    },
+    {
+      "wavelength": 485,
+      "relativeIntensity": 122.92
+    },
+    {
+      "wavelength": 490,
+      "relativeIntensity": 120.7
+    },
+    {
+      "wavelength": 495,
+      "relativeIntensity": 116.9
+    },
+    {
+      "wavelength": 500,
+      "relativeIntensity": 112.1
+    },
+    {
+      "wavelength": 505,
+      "relativeIntensity": 106.98
+    },
+    {
+      "wavelength": 510,
+      "relativeIntensity": 102.3
+    },
+    {
+      "wavelength": 515,
+      "relativeIntensity": 98.81
+    },
+    {
+      "wavelength": 520,
+      "relativeIntensity": 96.9
+    },
+    {
+      "wavelength": 525,
+      "relativeIntensity": 96.78
+    },
+    {
+      "wavelength": 530,
+      "relativeIntensity": 98
+    },
+    {
+      "wavelength": 535,
+      "relativeIntensity": 99.94
+    },
+    {
+      "wavelength": 540,
+      "relativeIntensity": 102.1
+    },
+    {
+      "wavelength": 545,
+      "relativeIntensity": 103.95
+    },
+    {
+      "wavelength": 550,
+      "relativeIntensity": 105.2
+    },
+    {
+      "wavelength": 555,
+      "relativeIntensity": 105.67
+    },
+    {
+      "wavelength": 560,
+      "relativeIntensity": 105.3
+    },
+    {
+      "wavelength": 565,
+      "relativeIntensity": 104.11
+    },
+    {
+      "wavelength": 570,
+      "relativeIntensity": 102.3
+    },
+    {
+      "wavelength": 575,
+      "relativeIntensity": 100.15
+    },
+    {
+      "wavelength": 580,
+      "relativeIntensity": 97.8
+    },
+    {
+      "wavelength": 585,
+      "relativeIntensity": 95.43
+    },
+    {
+      "wavelength": 590,
+      "relativeIntensity": 93.2
+    },
+    {
+      "wavelength": 595,
+      "relativeIntensity": 91.22
+    },
+    {
+      "wavelength": 600,
+      "relativeIntensity": 89.7
+    },
+    {
+      "wavelength": 605,
+      "relativeIntensity": 88.83
+    },
+    {
+      "wavelength": 610,
+      "relativeIntensity": 88.4
+    },
+    {
+      "wavelength": 615,
+      "relativeIntensity": 88.19
+    },
+    {
+      "wavelength": 620,
+      "relativeIntensity": 88.1
+    },
+    {
+      "wavelength": 625,
+      "relativeIntensity": 88.06
+    },
+    {
+      "wavelength": 630,
+      "relativeIntensity": 88
+    },
+    {
+      "wavelength": 635,
+      "relativeIntensity": 87.86
+    },
+    {
+      "wavelength": 640,
+      "relativeIntensity": 87.8
+    },
+    {
+      "wavelength": 645,
+      "relativeIntensity": 87.99
+    },
+    {
+      "wavelength": 650,
+      "relativeIntensity": 88.2
+    },
+    {
+      "wavelength": 655,
+      "relativeIntensity": 88.2
+    },
+    {
+      "wavelength": 660,
+      "relativeIntensity": 87.9
+    },
+    {
+      "wavelength": 665,
+      "relativeIntensity": 87.22
+    },
+    {
+      "wavelength": 670,
+      "relativeIntensity": 86.3
+    },
+    {
+      "wavelength": 675,
+      "relativeIntensity": 85.3
+    },
+    {
+      "wavelength": 680,
+      "relativeIntensity": 84
+    },
+    {
+      "wavelength": 685,
+      "relativeIntensity": 82.21
+    },
+    {
+      "wavelength": 690,
+      "relativeIntensity": 80.2
+    },
+    {
+      "wavelength": 695,
+      "relativeIntensity": 78.24
+    },
+    {
+      "wavelength": 700,
+      "relativeIntensity": 76.3
+    },
+    {
+      "wavelength": 705,
+      "relativeIntensity": 74.36
+    },
+    {
+      "wavelength": 710,
+      "relativeIntensity": 72.4
+    },
+    {
+      "wavelength": 715,
+      "relativeIntensity": 70.4
+    },
+    {
+      "wavelength": 720,
+      "relativeIntensity": 68.3
+    },
+    {
+      "wavelength": 725,
+      "relativeIntensity": 66.3
+    },
+    {
+      "wavelength": 730,
+      "relativeIntensity": 64.4
+    },
+    {
+      "wavelength": 735,
+      "relativeIntensity": 62.8
+    },
+    {
+      "wavelength": 740,
+      "relativeIntensity": 61.5
+    },
+    {
+      "wavelength": 745,
+      "relativeIntensity": 60.2
+    },
+    {
+      "wavelength": 750,
+      "relativeIntensity": 59.2
+    },
+    {
+      "wavelength": 755,
+      "relativeIntensity": 58.5
+    },
+    {
+      "wavelength": 760,
+      "relativeIntensity": 58.1
+    },
+    {
+      "wavelength": 765,
+      "relativeIntensity": 58
+    },
+    {
+      "wavelength": 770,
+      "relativeIntensity": 58.2
+    },
+    {
+      "wavelength": 775,
+      "relativeIntensity": 58.5
+    },
+    {
+      "wavelength": 780,
+      "relativeIntensity": 59.1
+    },
+    {
+      "wavelength": null,
+      "relativeIntensity": null
+    },
+    {
+      "wavelength": null,
+      "relativeIntensity": null
+    }
+  ]
+}
