@@ -3,7 +3,7 @@
 * @Date:   2016-06-23T23:34:57-04:00
 * @Email:  me@kenlimmj.com
 * @Last modified by:   Astrianna
-* @Last modified time: 2016-06-26T22:32:22-04:00
+* @Last modified time: 2016-06-28T23:33:32-04:00
 * @License: MIT
 */
 
@@ -107,7 +107,7 @@ function constructTitle({ name, category, brand, lamptype, voltage, percentblue 
 
 function parseData(data) {
   // Extract column headers
-  const [headers, ...rows] = data.split('\n');
+  const [headers, ...rows] = data.trim().split('\n');
   const [firstColHeader, secondColHeader] = headers.split(',');
 
   // Extract rows
@@ -144,19 +144,11 @@ function clean({ destPath }, next) {
       spectralData: parseData(spectraldata),
     };
 
-    if (SIMULATE_CLEAN) {
-      console.dir(output); // eslint-disable-line no-console
-    } else {
-      jf.writeFile(destPath, output, { spaces: 2 }, err => {
-        if (err) throw err;
-        console.info(`Updated ${destPath}`);
-      });
-    }
+    next(null, output);
   } catch (err) {
     console.trace(err);
     console.error(`Encountered an error while cleaning ${destPath}. Skipping entry.`);
-  } finally {
-    next();
+    next(err, null);
   }
 }
 
@@ -184,8 +176,11 @@ function process(lamps) {
   console.info('Beginning processing of downloaded files...');
   console.time(TIMER_LABEL);
 
-  async.each(lamps, clean, err => {
+  async.map(lamps, clean, (err, results) => {
     if (err) throw err;
+
+    jf.writeFile('./lspdd.json', results, { spaces: 2 }, e => { if (e) throw e; });
+
     console.timeEnd(TIMER_LABEL);
   });
 }
