@@ -3,7 +3,7 @@
 * @Date:   2016-06-23T23:34:57-04:00
 * @Email:  me@kenlimmj.com
 * @Last modified by:   Astrianna
-* @Last modified time: 2016-06-28T23:33:32-04:00
+* @Last modified time: 2016-07-03T16:03:12-04:00
 * @License: MIT
 */
 
@@ -107,17 +107,17 @@ function constructTitle({ name, category, brand, lamptype, voltage, percentblue 
 
 function parseData(data) {
   // Extract column headers
-  const [headers, ...rows] = data.trim().split('\n');
-  const [firstColHeader, secondColHeader] = headers.split(',');
+  const [_, ...rows] = data.trim().split('\n');
 
   // Extract rows
   return rows.map(i => {
     const [wavelength, response] = i.trim().split(',');
 
-    // Re-apply the column headers as object keys
+    // Note: Use really. really. short object keys here unless
+    // you want the final compiled JSON file size to blow up. Really. Just don't.
     return {
-      [firstColHeader]: parseFloat(wavelength),
-      [secondColHeader]: parseFloat(response),
+      w: parseFloat(wavelength),
+      ri: parseFloat(response),
     };
   });
 }
@@ -179,7 +179,7 @@ function process(lamps) {
   async.map(lamps, clean, (err, results) => {
     if (err) throw err;
 
-    jf.writeFile('./lspdd.json', results, { spaces: 2 }, e => { if (e) throw e; });
+    jf.writeFile('./lspdd.json', results, { spaces: 0 }, e => { if (e) throw e; });
 
     console.timeEnd(TIMER_LABEL);
   });
