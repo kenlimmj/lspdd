@@ -186,5 +186,5 @@ function process(lamps) {
 }
 
 const lamps = generateTargets();
-// crawl(lamps);
+crawl(lamps);
 process(lamps);
