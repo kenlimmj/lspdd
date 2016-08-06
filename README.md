@@ -12,12 +12,12 @@ the site.
 
 The scraper downloads each JSON file within the id range and:
 
-- Constructs a human-readable title from the template `[Category][Brand][Lamp Type][Name][Voltage][% Blue Light]`. If a value does not exist
-- or is invalid, it is omitted. Coerces the computed spectrum indices to floats. If an index does not exist or is invalid, it is set to -1.
+- Constructs a human-readable title from the template `[Category][Brand][Lamp Type][Name][Voltage][% Blue Light]`. If a value does not exist or is invalid, it is omitted. 
+- Coerces the computed spectrum indices to floats. If an index does not exist or is invalid, it is set to -1.
 - Parses the wavelength vs. intensity data from CSV into an array of structs.
 
 To be polite, the scraper clamps the number of parallel downloads to 5 by default. People have kindly made their data available for
-free---let's not stress their servers!
+free—let's not stress their servers!
 
 ## Quick Start
 `lspdd.json` is a pre-scraped, minified JSON array of all entries that the scraper would otherwise find. [Download](https://github.com/kenlimmj/lspdd/blob/master/lspdd.json) and use. Brownie points, again, for not unnecessarily hitting any servers that weren't meant to handle high volumes.
